@@ -73,4 +73,4 @@ echo $(date) " - Script Complete"
 
 #systemctl restart dbus
 #reboot
-init 1; init 3
+#init 1; init 3
