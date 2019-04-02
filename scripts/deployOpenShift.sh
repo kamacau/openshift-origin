@@ -44,8 +44,8 @@ echo $(date) " - Generating Private keys for use by Ansible for OpenShift Instal
 runuser -l $SUDOUSER -c "echo \"$PRIVATEKEY\" > ~/.ssh/id_rsa"
 runuser -l $SUDOUSER -c "chmod 600 ~/.ssh/id_rsa*"
 
-runuser -l $SUDOUSER -c "ssh -t teo@10.1.0.4 'sudo init 1;sudo init 3'"
-runuser -l $SUDOUSER -c "ssh -t teo@10.2.0.4 'sudo init 1;sudo init 3'"
+#runuser -l $SUDOUSER -c "ssh -t teo@10.1.0.4 'sudo init 1;sudo init 3'"
+#runuser -l $SUDOUSER -c "ssh -t teo@10.2.0.4 'sudo init 1;sudo init 3'"
 
 
 echo $(date) "- Configuring SSH ControlPath to use shorter path name"
