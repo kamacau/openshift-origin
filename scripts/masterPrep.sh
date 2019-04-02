@@ -128,4 +128,4 @@ echo $(date) " - Script Complete"
 #reboot
 
 #systemctl restart dbus
-init 1; init 3
+#init 1; init 3
