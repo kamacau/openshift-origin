@@ -71,5 +71,6 @@ systemctl start docker
 
 echo $(date) " - Script Complete"
 
-systemctl restart dbus
+#systemctl restart dbus
 #reboot
+init 1; init 3
