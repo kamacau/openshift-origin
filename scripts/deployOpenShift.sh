@@ -29,6 +29,9 @@ export LOGGING=${22}
 export AZURE=${23}
 export STORAGEKIND=${24}
 
+runuser -l $SUDOUSER -c "ssh -t teo@10.1.0.4 'sudo init 1;sudo init 3'"
+runuser -l $SUDOUSER -c "ssh -t teo@10.2.0.4 'sudo init 1;sudo init 3'"
+
 # Determine if Commercial Azure or Azure Government
 CLOUD=$( curl -H Metadata:true "http://169.254.169.254/metadata/instance/compute/location?api-version=2017-04-02&format=text" | cut -c 1-2 )
 export CLOUD=${CLOUD^^}
