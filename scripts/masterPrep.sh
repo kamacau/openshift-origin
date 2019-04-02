@@ -124,3 +124,5 @@ EOF
 fi
 
 echo $(date) " - Script Complete"
+
+reboot
