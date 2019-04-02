@@ -125,4 +125,6 @@ fi
 
 echo $(date) " - Script Complete"
 
-reboot
+#reboot
+
+systemctl restart dbus
